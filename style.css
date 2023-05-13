@@ -1,0 +1,21 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%
+}
+
+#content {
+    height: 100%;
+    background-color: #444;
+    color: white;
+    font-family: monospace;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+#speed {
+    font-size: 5rem;
+}
