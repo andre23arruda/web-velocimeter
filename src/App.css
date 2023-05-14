@@ -1,0 +1,21 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%
+}
+
+#content {
+  height: 100%;
+  color: white;
+  font-family: monospace;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+}
+
+#speed {
+  font-size: 5rem;
+}

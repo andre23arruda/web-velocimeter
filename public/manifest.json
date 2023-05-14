@@ -1,0 +1,9 @@
+{
+    "short_name": "web-velocimeter",
+    "name": "Velocímetro WEB",
+    "theme_color": "#444",
+    "background_color": "#444",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+}
