@@ -1,9 +1,9 @@
 <h1 align="center">
-    <img alt="Velocímetro WEB" src="./public/logo192.png" width="100px" />
+    <img alt="Velocímetro WEB" src="./.github/icon.png" width="100px" />
 </h1>
 
 <h2 align="center">
-  Velocímetro WEB
+  Velocímetro WEB (PWA)
 </h2>
 
 <p align="center">
@@ -14,7 +14,11 @@
 </p>
 
 ## 😀 Demo
-<a href="https://andre23arruda-velocimeter.vercel.app/">Dê uma olhada</a>
+<a href="https://andrearruda-velocimeter.vercel.app">Dê uma olhada</a>
+- Abra no navegador do celular e instale para usar offline
+<br/>
+<br/>
+<br/>
 
 ## 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -33,7 +37,7 @@ Ter instalado:
 #### No terminal, rodar
 ```sh
 # Clonar esse repositório
-git clone https://github.com/andre23arruda/velocimeter
+git clone https://github.com/andre23arruda/web-velocimeter
 
 # Instalar os pacotes do projeto
 yarn install
@@ -41,3 +45,10 @@ yarn install
 # Rodar
 yarn start
 ```
+
+<div align="center">
+    <img alt="Speed 0" title="Speed 0" src=".github/screen_1.png" width="200px" />
+    <img alt="Speed 60" title="Speed 60" src=".github/screen_2.png" width="200px" />
+    <img alt="Speed 120" title="Speed 120" src=".github/screen_3.png" width="200px" />
+</div>
+<hr>
