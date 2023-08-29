@@ -5,6 +5,7 @@ import './App.css'
 
 export default function App() {
 	const [speed, setSpeed] = useState(0)
+	const [isStopped, setIsStopped] = useState(true)
 
 	let watchID = null
 	const options = {enableHighAccuracy:true}
@@ -13,11 +14,13 @@ export default function App() {
 		if (!watchID) {
 			watchID = navigator.geolocation.watchPosition(
 			updatePosition, handleError, options)
+			setIsStopped(false)
 		}
 		else {
 			navigator.geolocation.clearWatch(watchID)
 			watchID = null
 			setSpeed(0)
+			setIsStopped(true)
 		}
 	}
 
@@ -51,6 +54,10 @@ export default function App() {
 				{ speed }
 			</div>
 			<div>Km/h</div>
+
+			<p id="tap">
+				Tap to {isStopped ? 'start' : 'stop'}
+			</p>
 		</div>
 	)
 }
