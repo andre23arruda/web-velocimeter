@@ -11,9 +11,10 @@ export default function App() {
 	const options = {enableHighAccuracy:true}
 
 	function onClick() {
-		if (!watchID) {
+		if (!watchID && isStopped) {
 			watchID = navigator.geolocation.watchPosition(
-			updatePosition, handleError, options)
+				updatePosition, handleError, options
+			)
 			setIsStopped(false)
 		}
 		else {
@@ -29,7 +30,6 @@ export default function App() {
 			return
 		setSpeed((position.coords.speed * 3.6).toFixed(1))
 	}
-
 
 	function handleError(error) {
 		console.log(error.message)
