@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import NoSleep from 'nosleep.js'
 
 import './App.css'
 
@@ -13,18 +14,22 @@ export default function App() {
 		maximumAge: 0,
 	}
 
+	var noSleep = new NoSleep()
+
 	function onClick() {
 		if (!watchID && isStopped) {
 			setWatchID(navigator.geolocation.watchPosition(
 				updatePosition, handleError, options
 			))
 			setIsStopped(false)
+			noSleep.enable()
 		}
 		else {
 			navigator.geolocation.clearWatch(watchID)
 			setWatchID(null)
 			setSpeed((0).toFixed(1))
 			setIsStopped(true)
+			noSleep.disable()
 		}
 	}
 
